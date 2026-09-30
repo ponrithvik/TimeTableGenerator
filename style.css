@@ -1,0 +1,126 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(to bottom, #232323, #767676);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Main{
+    align-items: center;
+    text-align: center;
+    background-color: hsl(0, 2%, 56%);
+    width: 75%;
+    padding: 1rem;
+    border-radius: 50px;
+ 
+
+}
+
+
+input[type="number"]{
+    width: 3em;
+    height: 2em;
+    border-radius: 0.5rem;
+    outline: none;
+    border: black 0.1rem solid;
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding: none;
+    padding: 0.1rem;
+}
+
+input[type="button"]{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: hsl(0, 1%, 14%);
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    color: white;
+    border: black 0.1rem solid;
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding: none;
+    padding: 0.1rem;
+    cursor: pointer;
+}
+
+input[type="number"]{
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+
+input[type="text"]{
+    width: 10em;
+    height: 2em;
+    border-radius: 0.5rem;
+    outline: none;
+    border: black 0.1rem solid;
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding: none;
+    padding: 0.1rem;
+}
+
+h1{
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding: none;
+    padding: 0.1rem;
+}
+
+.circle{
+    position: fixed;
+    width: 19%;
+    height: auto;
+    z-index: -1;
+    animation: rotate 10s linear infinite;
+    rotate: 0deg;
+    
+}
+
+p{
+    color: white;
+    font-size: 1rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding: none;
+    padding: 0.1rem;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}

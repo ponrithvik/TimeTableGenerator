@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2025.8.1/core.css">
+
+    <script type="module"
+            src="https://pyscript.net/releases/2025.8.1/core.js">
+    </script>
+
+    <title>Time Table Generator</title>
+</head>
+<body>
+
+    <img class="circle" src="Circle.png" style="top: -10%; left: -10%; ">
+    <img class="circle" src="Circle.png" style="top: -10%; right: -10%; ">
+    <img class="circle" src="Circle.png" style="bottom: -10%; right: -10%; ">
+    <img class="circle" src="Circle.png" style="bottom: -10%; left: -10%; ">
+
+    <div id = "Main">
+        <div id="inputs">
+            <label>Number of Days: 6</label>
+
+            <br>
+
+            <label>Number of Subjects:</label>
+            <input id="numOfSubs" type="number" min="1" max="50" value="20"></input>
+
+            <br>
+        
+            <label>Number of Sessions per day:</label>
+            <input id="numOfSessions" type="number" min="1" max="20" value="8"></input>
+
+            <br>
+            <input type="button" value="Next" id="nextBtn" onclick="next()"></input>
+
+
+        </div>
+
+        <div id = "outputs">
+
+            <input type = "button" value = "Generate" id = "generateBtn" py-click="generateTimeTable" hidden></input>
+
+            <p id = "result"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
